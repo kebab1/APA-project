@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Proiect APA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+</head>
+<body>
+
+
+<div class="wrapper">
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>Menu</h3>
+        </div>
+        <form name="vforms" >
+            <div class="form-group">
+                <label></label>
+                <label id="sum" >Suma disponibila</label>
+
+                <input type="number" min = "0" class="form-control input-sm" id="suma" value="">
+                <label></label>
+                <label id="loc">Locatia</label>
+                <select class="form-control input-sm" id="locatie">
+                    <option value='0'>Moldova</option>
+                    <option value="1">Romania</option>
+                    <option value="2">Italia</option>
+                    <option value="3">Germania</option>
+                    <option value="4">Spania</option>
+                    <option value="5">Austria</option>
+                    <option value="6">Grecia</option>
+                    <option value="7">Franta</option>
+                    <option value="8">Cehia</option>
+                    <option value="9">Turcia</option>
+                </select>
+                <label></label>
+                <label id="dest" ">Destinatia</label>
+                <select id="destinatie" class="form-control input-sm">
+                    <option value="0" selected="selected">Moldova</option>
+                   <option value="1">Romania</option>
+                    <option value="2">Italia</option>
+                    <option value="3">Germania</option>
+                    <option value="4">Spania</option>
+                    <option value="5">Austria</option>
+                    <option value="6">Grecia</option>
+                    <option value="7">Franta</option>
+                    <option value="8">Cehia</option>
+                    <option value="9">Turcia</option>
+                </select>
+                <label></label>
+                <label id="choice" ">Alegeti transporul</label>
+                <br>
+                <label id="Auto">
+                    <input type="radio" name="auto"  value="automobil" id="auto">Automobil
+                </label>
+                <label id="Avion">
+                    <input type="radio" name="auto"  value="avion" id="avion">Avion
+                </label>
+                <label></label>
+                <button class="btn btn-primary active btn-block" id="firstButton" type="button" >Let's go</button>
+
+            </div>
+        </form>
+    </nav>
+
+    <div id="content">
+        <div class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                   <div class="navbar-brand">
+                      <a href="javascript:void(0)" onclick="window.location.reload()">APA project</a>
+                   </div>
+                   <div id="dialog_auto" style="display: none;">
+                     <ul class="auto">
+                        
+                     </ul>
+                  </div>
+                  <div id="dialog_avion" style="display: none;">
+                      <ul class="avion">
+                        
+                     </ul>
+                  </div>
+                   <div id="dialog_drumuri" style="display: none;">
+                      <ul class="drumuri_posibile">
+                        
+                     </ul>
+                  </div>
+                  <div id="dialog_sum" title="Atentie!!!" style="display: none;">
+                    <p>Suma disponibila trebuie sa fie mai care ca 0!</p>  
+                  </div>
+                  <div id="inaccesibil" title="Error!!!" style="display: none;">
+                    <p>Punctul este inaccesibil!!!</p>  
+                  </div>
+                  <button type="button" class="btn btn-default" id="drum_pos">Drumuri posibile</button>
+                  <button type="button" class="btn btn-info" id="opener">Cost auto</button>   
+                  <button type="button" class="btn btn-info" id="opener1">Cost avion</button>  
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="p5.js"></script>
+<script type="text/javascript" src="addons/p5.dom.js"></script>
+<script type="text/javascript" src="addons/p5.sound.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<!-- Menu Toggle Script -->
+
+</body>
+</html>
